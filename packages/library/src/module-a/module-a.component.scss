@@ -1,0 +1,55 @@
+$background-color: #D8CFB2;
+
+:host {
+  display: block;
+}
+
+* {
+  color: #000000;
+  background-color: $background-color;
+}
+
+/deep/ {
+  * {
+    font-size: 11px;
+    text-align: left;
+  }
+}
+
+header {
+  background-color: #fff;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+main {
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 11px;
+  background-color: $background-color;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 2px outset #CCCCCC;
+  border-right: 2px outset #333333;
+  border-bottom: 2px outset #333333;
+  border-left: 2px outset #CCCCCC;
+  width: 120px;
+  border-color: buttonface;
+  text-decoration: none;
+}
