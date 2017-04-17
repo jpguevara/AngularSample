@@ -21,3 +21,11 @@ To consume a library package we need the next steeps:
 
 1. A dependency to the package has to be installed and added to this project package.json.
 2. A route is needed in the file `packages/main.app/src/app/app.module.ts` to be able to call all the child routes included in the library/package.
+
+# running the app
+
+1. clone the repo
+2. npm install
+3. npm run dev:library
+
+this will install all dependencies, compile the library, install the library in the main.app and build the main.app.
