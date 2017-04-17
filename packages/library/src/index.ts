@@ -1,1 +1,1 @@
-export { ModuleAModule } from './module-a/module-a.module';
+export { ModuleAModule, ModuleARoutes, ModuleAComponents } from './module-a/module-a.module';

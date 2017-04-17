@@ -1,9 +1,9 @@
-import { Routes } from '@angular/router';
+// import { Routes } from '@angular/router';
 
 import { MIComponent } from "./mi";
 import { ErrorComponent } from "./error";
 
-export const routes: Routes = [
+export const routes = [
   // { path: ':id/mi', loadChildren: './mi/mi.module#MIModule'},
   // { path: 'error', loadChildren: './error/error.module#ErrorModule' },
   // { path: '**', loadChildren: './error/error.module#ErrorModule' }

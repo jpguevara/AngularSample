@@ -10,7 +10,8 @@ import { ModuleAComponent } from './module-a.component';
 
 import { routes , routableComponents} from './module-a.routes';
 
-
+import { MIComponent } from "./mi";
+import { ErrorComponent } from "./error";
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { routes , routableComponents} from './module-a.routes';
     HttpModule,
     FormsModule,
     CommonModule,
-    RouterModule.forChild(routes),
+    RouterModule.forChild([]),
+    //RouterModule.forChild(routes),
     NgbModule.forRoot(),
     
 
@@ -44,3 +46,6 @@ export class ModuleAModule {
     ] };
   }
  }
+
+export const ModuleAComponents = routableComponents;
+export const ModuleARoutes = routes;

@@ -15,12 +15,13 @@
 
 
     "build:library": "cd packages/library && npm run build",
-    "build:main.app": "cd packages/main.app && npm run build",
+    "build:main.app": "cd packages/main.app && npm run build:prod",
     "build:app": "npm run build:main.app",
 
 
     "install:library:intoapp": "cd packages/main.app && npm i ../library/release",
     "dev:library": "npm-run-all build:library install:library:intoapp build:main.app",
+
 
 
     "start": "cd packages/main.app && npm run start"
