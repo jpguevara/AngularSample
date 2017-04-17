@@ -1,13 +1,13 @@
 {
   "name": "@myapp/library",
-  "version": "0.0.15",
+  "version": "0.0.17",
   "license": "ISC",
   "angular-cli": {},
   "scripts": {
     "cleanup:release": "rimraf release ./release/**/*.ngfactory.ts ./release/**/*.ngstyle.ts ./release/**/*.ngsummary.json",
     "cleanup": "npm run cleanup:release",
     "build:aot": "node_modules/.bin/ngc -p tsconfig-aot.json",
-    "build": "npm run cleanup && npm run build:aot  && gulp && npm version patch && xcopy /Y package.json release",
+    "build": "npm run cleanup && npm run build:aot  && gulp && npm version patch && copyfiles -f package.json release",
     "clean": "rimraf node_modules/"
   },
   "dependencies": {
